@@ -42,14 +42,26 @@ input[type=text]:focus {
   }
 
 button{
+    font-size: 15px;
     background-color: #0e7751;
     color: white;
     padding: 10px 24px;
     border-radius: 10px;
     transition-duration: 0.1s;
+    
     }
      
 button:hover{
     background-color:#1bcbd1;
     
     }
+
+.cnt{
+    display: flex;
+   justify-content: center;
+    align-items: center;
+    
+}
+.top{
+    width: 10%;
+}

@@ -40,6 +40,14 @@ task.splice(task.indexOf(completeTask[i]), 1);
 }
 res.redirect("/");
 });
+
+app.post("/clear", function(req, res){
+     task = [];
+ 
+     complete = [];
+    res.redirect("/");
+   
+});
  
 //render the ejs and display added task, completed task
 app.get("/", function(req, res) {
