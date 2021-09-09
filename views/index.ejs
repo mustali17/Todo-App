@@ -17,9 +17,9 @@
 <button > +  Add Task </button>
 <h2> Added Task </h2>
 <% for( var i = 0; i < task.length; i++){ %>
-<li><input type="checkbox" name="check" id="xd" value="<%= task[i] %>" /><label for="xd" class="stikethrough"> <%= task[i] %></label> </li>
+<li><input formaction="/removetask" type="checkbox" name="check" id="xd" value="<%= task[i] %>" /><label  for="xd" class="stikethrough"> <%= task[i] %></label> </li>
 <% } %>
-<button formaction="/removetask" type="submit" id="top"> Remove </button>
+<button formaction="/removetask"  id="top"> Remove </button>
 
 
 
