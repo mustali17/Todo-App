@@ -11,6 +11,7 @@ app.listen(process.env.PORT || 3003, function() {
     
 
     })
+
  
 
 var task = [];
@@ -48,10 +49,23 @@ app.post("/clear", function(req, res){
     res.redirect("/");
    
 });
+
+    let date_ob= new Date();
+    let date=("0"+date_ob.getDate()).slice(-2);
+    let month=("0"+(date_ob.getMonth()+1)).slice(-2);
+    let year =date_ob.getFullYear();
+    let hour =date_ob.getHours();
+    let min =date_ob.getMinutes();
+    let sec =date_ob.getSeconds();
+    console.log(date+"-"+month+"-"+year);
+    console.log(hour+":"+min);
+    var Fdate=date+"-"+month+"-"+year;
+    var Ftime=hour+":"+min+":"+sec;
+
  
 //render the ejs and display added task, completed task
 app.get("/", function(req, res) {
-res.render("index", { task: task, complete: complete });
+res.render("index", { task: task, complete: complete,Fdate: Fdate,Ftime: Ftime});
 });
  
 
