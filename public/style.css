@@ -30,6 +30,10 @@ body{
     h1{
         text-align: center;
     }
+    hr.h{
+        border:1px solid green;
+        border-radius: 5px;
+    }
      
  li {
     background: #cce5ff;
