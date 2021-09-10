@@ -60,7 +60,7 @@ app.post("/clear", function(req, res){
     console.log(date+"-"+month+"-"+year);
     console.log(hour+":"+min);
     var Fdate=date+"-"+month+"-"+year;
-    var Ftime=hour+":"+min+":"+sec;
+    var Ftime=hour+":"+min;
 
  
 //render the ejs and display added task, completed task

@@ -19,6 +19,8 @@
 <button > +  Add Task </button>
 <h2> ToDo Task </h2>
 <hr class="h">
+</form>
+<form  method="POST">
 <% for( var i = 0; i < task.length; i++){ %>
 <li><input formaction="/removetask" type="checkbox" name="check" id="xd" value="<%= task[i] %>" /><label  for="xd" class="stikethrough"> <%= task[i] %></label> </li>
 <% } %>
